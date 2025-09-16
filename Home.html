@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home.css" <title>UQSEH - Urbanismo, Questões Socioeconômicas e História</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min
+.css" rel="stylesheet">
+    <!-- FontAwesome -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-
+awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- AOS (Animate on Scroll) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+
+<body>
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Urbanização Brasil</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span
+                    class="navbar-toggler-icon"><i class="fas
+fa-bars" style="color:white;"></i></span></button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#vantagens">Vantagens</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#desvantagens">Desvantagens</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#impactos">Impactos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#graficos">Gráficos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mapa">Mapa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#podcasts">Podcasts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#referencias">Referências</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero -->
+    <section class="hero" data-aos="fade-in">
+        <div>
+            <h1>Urbanização no Brasil</h1>
+            <p class="lead">Impactos sociais, econômicos e ambientais</p>
+        </div>
+    </section>
+    <div class="container">
+        <div class="banner" data-aos="fade-up">[ Espaço reservado para Banner
+            ]</div>
+    </div>
+    <!-- Sobre -->
+    <section class="container py-5" data-aos="fade-up">
+        <h2 class="text-center mb-4">O que é a Urbanização?</h2>
+        <p class="text-center">Urbanização é o crescimento das cidades e aumento
+            da população urbana. No Brasil, acelerou no século XX devido à migração,
+            industrialização e busca por melhores condições de vida, trazendo
+            oportunidades e desafios sociais, ambientais e econômicos.</p>
+    </section>
+    <!-- Parallax Vantagens -->
+
+    <div class="parallax"
+        style="background-image:url('https://images.unsplash.com/photo-1534351590666-13e3e96b5017?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"
+        data- aos="fade-in">Vantagens da Urbanização</div>
+
+    <section id="vantagens" class="container py-5">
+        <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card"><img
+                        src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Desenvolvimento Econômico</h5>
+                        <p class="card-text">Concentração de indústrias e serviços gera empregos e
+                            renda.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card"><img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Acesso a Serviços</h5>
+                        <p class="card-text">Educação, saúde, lazer e transporte tornam-se mais
+                            acessíveis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card"><img src="https://images.unsplash.com/photo-1520962918287-7448c2878f65?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Inovação</h5>
+                        <p class="card-text">Cidades concentram centros de pesquisa e startups fomentando
+
+                            inovação.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Parallax Desvantagens -->
+
+    <div class="parallax"
+        style="background-image:url('https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"
+        data- aos="fade-in">Desafios da Urbanização</div>
+
+    <section id="desvantagens" class="container py-5">
+        <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+                <div class="card"><img
+                        src="https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Desigualdade
+                            Social</h5>
+                        <p>Crescimento desordenado gera favelização e
+                            exclusão.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-right" data-aos-delay="200">
+                <div class="card"><img src="https://images.unsplash.com/photo-1520964552243-
+1b4c2f8b6fbd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Impactos
+                            Ambientais</h5>
+                        <p>Poluição, desmatamento, ilhas de calor e crises
+                            hídricas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
+                <div class="card"><img src="https://images.unsplash.com/photo-1604514627984-
+89e3d8d11a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Infraestrutura
+                            Precária</h5>
+                        <p>Transporte, saneamento e habitação não acompanham
+                            demanda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Impactos Detalhados -->
+    <section id="impactos" class="container py-5">
+        <h2 class="text-center mb-4" data-aos="fade-up">Impactos Detalhados</h2>
+        <div class="row g-4">
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card text-center p-3"><i class="fas fa-users fa-3x mb-3 text-
+info"></i>
+                    <h5>Sociais</h5>
+                    <p>Crescimento urbano desordenado aumenta
+
+                        desigualdade, favelização e problemas de mobilidade.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="card text-center p-3"><i class="fas fa-leaf fa-3x mb-3 text-
+success"></i>
+                    <h5>Ambientais</h5>
+                    <p>Poluição, desmatamento e crises
+
+                        hídricas aumentam com expansão urbana.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="card text-center p-3"><i class="fas fa-chart-line fa-3x mb-3 text-
+warning"></i>
+                    <h5>Econômicos</h5>
+                    <p>Urbanização gera empregos e inovação,
+
+                        mas exige planejamento e investimento em infraestrutura.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gráficos -->
+    <section id="graficos" class="container py-5">
+        <h2 class="text-center mb-4" data-aos="fade-up">Gráficos de
+            Urbanização</h2>
+        <div class="chart-container" data-aos="fade-up"><canvas id="chartUrban"></canvas></div>
+
+        <div class="chart-container" data-aos="fade-up" data-aos- delay="200"><canvas id="chartDensidade"></canvas>
+        </div>
+
+    </section>
+    <!-- Mapa -->
+    <section id="mapa" class="container py-5">
+        <h2 class="text-center mb-4" data-aos="fade-up">Mapa de Urbanização por
+            Região</h2>
+        <div id="map" data-aos="fade-up"></div>
+    </section>
+    <!-- Galeria -->
+    <section id="galeria" class="container py-5">
+        <h2 class="text-center mb-4" data-aos="fade-up">Galeria de Imagens</h2>
+        <div class="row g-4 gallery">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100"><img src="https://images.unsplash.com/photo-1494526585095-
+
+c41746248156?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt=""></div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200"><img src="https://images.unsplash.com/photo-1520974737032-
+6d2d87c1b1c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt=""></div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300"><img src="https://images.unsplash.com/photo-1536480033474-
+9e4ccf0a993e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt=""></div>
+        </div>
+    </section>
+    <!-- Podcasts -->
+    <section id="podcasts" class="container py-5">
+        <h2 class="text-center mb-4" data-aos="fade-up">Podcasts sobre
+            Urbanização</h2>
+        <div id="podcastCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner podcast">
+                <div class="carousel-item active"><iframe src="https://open.spotify.com/embed/episode/1"
+                        frameborder="0"></iframe></div>
+                <div class="carousel-item"><iframe src="https://open.spotify.com/embed/episode/2"></iframe></div>
+                <div class="carousel-item"><iframe src="https://open.spotify.com/embed/episode/3"></iframe></div>
+                <div class="carousel-item"><iframe src="https://open.spotify.com/embed/episode/4"></iframe></div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs- target="#podcastCarousel"
+                data-bs-slide="prev"><span class="carousel-
+control-prev-icon"></span></button>
+
+            <button class="carousel-control-next" type="button" data-bs- target="#podcastCarousel"
+                data-bs-slide="next"><span class="carousel-
+control-next-icon"></span></button>
+
+        </div>
+    </section>
+    <!-- Referências -->
+    <section id="referencias" class="container py-5">
+        <h2 class="text-center mb-4" data-aos="fade-up">Referências</h2>
+        <ul>
+            <li>IBGE - Instituto Brasileiro de Geografia e Estatística</li>
+            <li>ONU-Habitat - Relatórios sobre urbanização</li>
+            <li>Maricato, E. - "O Impasse da Política Urbana no Brasil"</li>
+            <li>Rolnik, R. - "Cidade e Cidadania"</li>
+            <li>IPEA - Estudos sobre Desenvolvimento Urbano</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Urbanização Brasil | Desenvolvido para fins acadêmicos</p>
+        <div class="mt-2">
+            <a href="#"><i class="fab fa-facebook-f mx-2"></i></a>
+            <a href="#"><i class="fab fa-twitter mx-2"></i></a>
+            <a href="#"><i class="fab fa-instagram mx-2"></i></a>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundl
+e.min.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+        // Charts
+        const ctx = document.getElementById('chartUrban').getContext('2d');
+        const chartUrban = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['1950', '1970', '1990', '2010', '2020'],
+                datasets: [{
+                    label: '% População Urbana', data: [36, 55, 75, 84, 87],
+                    borderColor: '#00ffcc', backgroundColor: 'rgba(0,255,204,0.3)', fill: true,
+                    tension: 0.3
+                }]
+            },
+            options: {
+                responsive: true, plugins: { legend: { labels: { color: 'white' } } },
+                scales: { x: { ticks: { color: 'white' } }, y: { ticks: { color: 'white' } } }
+            }
+        });
+        const ctx2 = document.getElementById('chartDensidade').getContext('2d');
+        const chartDensidade = new Chart(ctx2, {
+            type: 'bar',
+            data: {
+                labels: ['Sudeste', 'Nordeste', 'Sul', 'Norte', 'Centro-Oeste'],
+                datasets: [{
+                    label: 'Densidade Urbana (hab/km2)', data: [500, 250, 150, 50, 100],
+                    backgroundColor: 'rgba(0,255,204,0.5)'
+                }]
+            },
+            options: {
+                responsive: true, plugins: { legend: { labels: { color: 'white' } } },
+                scales: { x: { ticks: { color: 'white' } }, y: { ticks: { color: 'white' } } }
+            }
+        });
+        // Mapa
+        const map = L.map('map').setView([-14.2350, -51.9253], 4);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+        const estados = [{
+            name: 'Sudeste', coords: [-22, -
+                45], urban: 85
+        }, {
+            name: 'Nordeste', coords: [-9, -
+                38], urban: 75
+        }, {
+            name: 'Sul', coords: [-30, -52], urban: 80
+        }, { name: 'Norte', coords: [-3, -60], urban: 70 }, {
+            name: 'Centro-Oeste', coords: [-15, -54], urban: 78
+        }];
+
+        estados.forEach(e => {
+            L.circle(e.coords, {
+                radius: e.urban * 2000, color: '#00ffcc', fillColor: '#00ffcc', fillOpacity: 0.4
+            }).addTo(map).bindPopup(`${e.name}:
+${e.urban} % população urbana`);
+        });
+    </script>
+</body>
+
+</html>
