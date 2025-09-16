@@ -7,12 +7,10 @@
     <link rel="stylesheet" href="Home.css">
     <title>UQSEH - Urbanismo, Questões Socioeconômicas e História</title>
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min
-.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome -->
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -40,7 +38,8 @@ awesome/6.4.0/css/all.min.css" rel="stylesheet">
             <a class="navbar-brand" href="#">Urbanismo, Questões Socioeconômicas e História</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span
-                    class="navbar-toggler-icon"><i class="fasfa-bars" style="color:white;"></i></span></button>
+                    class="navbar-toggler-icon"><i class="fasfa-bars"
+                        style="color:rgb(255, 255, 255);"></i></span></button>
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#vantagens">Vantagens</a></li>
@@ -109,9 +108,7 @@ awesome/6.4.0/css/all.min.css" rel="stylesheet">
                         alt="">
                     <div class="card-body">
                         <h5 class="card-title">Inovação</h5>
-                        <p class="card-text">Cidades concentram centros de pesquisa e startups fomentando
-
-                            inovação.</p>
+                        <p class="card-text">Cidades concentram centros de pesquisa e startups fomentando inovação.</p>
                     </div>
                 </div>
             </div>
@@ -184,8 +181,7 @@ success"></i>
                 </div>
             </div>
             <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-                <div class="card text-center p-3"><i class="fas fa-chart-line fa-3x mb-3 text-
-warning"></i>
+                <div class="card text-center p-3"><i class="fas fa-chart-line fa-3x mb-3 text-warning"></i>
                     <h5>Econômicos</h5>
                     <p>Urbanização gera empregos e inovação,
 
@@ -206,8 +202,7 @@ warning"></i>
     </section>
     <!-- Mapa -->
     <section id="mapa" class="container py-5">
-        <h2 class="text-center mb-4" data-aos="fade-up">Mapa de Urbanização por
-            Região</h2>
+        <h2 class="text-center mb-4" data-aos="fade-up">Mapa de Urbanização por Região</h2>
         <div id="map" data-aos="fade-up"></div>
     </section>
     <!-- Galeria -->
@@ -240,8 +235,7 @@ c41746248156?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt=""></div>
                 data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
 
             <button class="carousel-control-next" type="button" data-bs- target="#podcastCarousel"
-                data-bs-slide="next"><span class="carousel-
-control-next-icon"></span></button>
+                data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
 
         </div>
     </section>
@@ -305,7 +299,8 @@ e.min.js"></script>
         // Mapa
         const map = L.map('map').setView([-14.2350, -51.9253], 4);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap contributors'}).addTo(map);
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
         const estados = [{
             name: 'Sudeste', coords: [-22, -
                 45], urban: 85
