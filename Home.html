@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Home.css" <title>UQSEH - Urbanismo, Questões Socioeconômicas e História</title>
+    <link rel="stylesheet" href="Home.css">
+    <title>UQSEH - Urbanismo, Questões Socioeconômicas e História</title>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min
 .css" rel="stylesheet">
@@ -36,11 +37,10 @@ awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Urbanização Brasil</a>
+            <a class="navbar-brand" href="#">Urbanismo, Questões Socioeconômicas e História</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span
-                    class="navbar-toggler-icon"><i class="fas
-fa-bars" style="color:white;"></i></span></button>
+                    class="navbar-toggler-icon"><i class="fasfa-bars" style="color:white;"></i></span></button>
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#vantagens">Vantagens</a></li>
@@ -59,12 +59,11 @@ fa-bars" style="color:white;"></i></span></button>
     <section class="hero" data-aos="fade-in">
         <div>
             <h1>Urbanização no Brasil</h1>
-            <p class="lead">Impactos sociais, econômicos e ambientais</p>
+            <p class="lead">Impactos sociais, socioeconômicos e ambientais</p>
         </div>
     </section>
     <div class="container">
-        <div class="banner" data-aos="fade-up">[ Espaço reservado para Banner
-            ]</div>
+        <div class="banner" data-aos="fade-up">[ Espaço reservado para Banner]</div>
     </div>
     <!-- Sobre -->
     <section class="container py-5" data-aos="fade-up">
@@ -94,7 +93,9 @@ fa-bars" style="color:white;"></i></span></button>
                 </div>
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card"><img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="">
+                <div class="card"><img
+                        src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="">
                     <div class="card-body">
                         <h5 class="card-title">Acesso a Serviços</h5>
                         <p class="card-text">Educação, saúde, lazer e transporte tornam-se mais
@@ -103,7 +104,9 @@ fa-bars" style="color:white;"></i></span></button>
                 </div>
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card"><img src="https://images.unsplash.com/photo-1520962918287-7448c2878f65?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="">
+                <div class="card"><img
+                        src="https://images.unsplash.com/photo-1520962918287-7448c2878f65?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="">
                     <div class="card-body">
                         <h5 class="card-title">Inovação</h5>
                         <p class="card-text">Cidades concentram centros de pesquisa e startups fomentando
@@ -234,8 +237,7 @@ c41746248156?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt=""></div>
             </div>
 
             <button class="carousel-control-prev" type="button" data-bs- target="#podcastCarousel"
-                data-bs-slide="prev"><span class="carousel-
-control-prev-icon"></span></button>
+                data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
 
             <button class="carousel-control-next" type="button" data-bs- target="#podcastCarousel"
                 data-bs-slide="next"><span class="carousel-
@@ -276,7 +278,7 @@ e.min.js"></script>
                 labels: ['1950', '1970', '1990', '2010', '2020'],
                 datasets: [{
                     label: '% População Urbana', data: [36, 55, 75, 84, 87],
-                    borderColor: '#00ffcc', backgroundColor: 'rgba(0,255,204,0.3)', fill: true,
+                    borderColor: '#e80606', backgroundColor: 'rgba(237, 35, 35, 0.7)', fill: true,
                     tension: 0.3
                 }]
             },
@@ -292,7 +294,7 @@ e.min.js"></script>
                 labels: ['Sudeste', 'Nordeste', 'Sul', 'Norte', 'Centro-Oeste'],
                 datasets: [{
                     label: 'Densidade Urbana (hab/km2)', data: [500, 250, 150, 50, 100],
-                    backgroundColor: 'rgba(0,255,204,0.5)'
+                    backgroundColor: 'rgba(237, 35, 35, 0.7)'
                 }]
             },
             options: {
@@ -303,8 +305,7 @@ e.min.js"></script>
         // Mapa
         const map = L.map('map').setView([-14.2350, -51.9253], 4);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap contributors'
-        }).addTo(map);
+            attribution: '© OpenStreetMap contributors'}).addTo(map);
         const estados = [{
             name: 'Sudeste', coords: [-22, -
                 45], urban: 85
@@ -319,9 +320,8 @@ e.min.js"></script>
 
         estados.forEach(e => {
             L.circle(e.coords, {
-                radius: e.urban * 2000, color: '#00ffcc', fillColor: '#00ffcc', fillOpacity: 0.4
-            }).addTo(map).bindPopup(`${e.name}:
-${e.urban} % população urbana`);
+                radius: e.urban * 2000, color: '#e80606', fillColor: '#dc0000', fillOpacity: 0.4
+            }).addTo(map).bindPopup(`${e.name}:${e.urban} % população urbana`);
         });
     </script>
 </body>
