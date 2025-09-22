@@ -12,7 +12,10 @@
 <body>
   <nav class="navbar navbar-expand-lg"> 
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">UrbanizaBR</a>
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+        <img src="img/Famicon2.png" alt="Logo UrbanizaBR" width="40" height="40" class="me-2">
+        UrbanizaBR
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
         aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -61,84 +64,275 @@
 
     <section id="banners" class="mb-5">
       <div class="card mb-3">
-        <img src="img/bannerinstitucional.png" class="img-fluid rounded" alt="Banner"
-          style="max-height: 400px; width: 100%; object-fit: cover;">
+        <a href="https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/41901-censo-2022-87-da-populacao-brasileira-vive-em-areas-urbanas"><img src="img/bannerinstitucional.png" class="img-fluid rounded" alt="Banner"
+          style="max-height: 400px; width: 100%; object-fit: cover;"></a>
       </div>
 
       <!-- Desenvolver melhor Apezar que eu gostei👍 -->
-      <section id="dados" class="mb-5">
-        <h2>Linha do Tempo</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <div class="timeline-badge">1900</div>
-              <h5 class="timeline-title">Cidades Pequenas</h5>
-              <p class="timeline-text">No início do século XX, as cidades pequenas do Brasil eram centros de comércio
-                agrícola, com infraestrutura básica e poucas comodidades.</p>
-              <ul class="timeline-text">
-                <li>População urbana &lt; 20%</li>
-                <li>Infraestrutura limitada</li>
-                <li>Centros comerciais rurais</li>
-              </ul>
-            </div>
-          </div>
+      <section id="linha" class="mb-5">
+      <h2>Linha do Tempo</h2>
+      <div class="timeline">
 
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <div class="timeline-badge">1950</div>
-              <h5 class="timeline-title">Industrialização</h5>
-              <p class="timeline-text">A industrialização levou a um rápido crescimento urbano, mudando a estrutura
-                social e econômica.</p>
-              <ul class="timeline-text">
-                <li>Surgimento de polos industriais</li>
-                <li>Migração rural-urbana intensa</li>
-                <li>Expansão de cidades médias</li>
-              </ul>
-            </div>
-          </div>
 
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <div class="timeline-badge">1970</div>
-              <h5 class="timeline-title">Êxodo Rural</h5>
-              <p class="timeline-text">Crescimento desordenado gerou favelas e inchaço populacional.</p>
-              <ul class="timeline-text">
-                <li>Favelas se expandem nas grandes cidades</li>
-                <li>Pressão sobre serviços públicos</li>
-                <li>Urbanização rápida e desordenada</li>
-              </ul>
-            </div>
-          </div>
+        <div class="timeline-item">
+          <!--ESSA AQUI-->
+          <button type="button" class="btn timeline-badge" data-bs-toggle="modal" data-bs-target="#mod_1900">
+            1900
+          </button>
+          <!--ESSA AQUI-->
+          <h5 class="timeline-title">Cidades Pequenas</h5>
+          <p class="timeline-text">No início do século XX, as cidades pequenas do Brasil eram centros de comércio
+            agrícola, com infraestrutura básica e poucas comodidades.</p>
+          <ul class="timeline-text">
+            <li>População urbana &lt; 20%</li>
+            <li>Infraestrutura limitada</li>
+            <li>Centros comerciais rurais</li>
+          </ul>
+        </div>
 
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <div class="timeline-badge">2001</div>
-              <h5 class="timeline-title">Estatuto da Cidade</h5>
-              <p class="timeline-text">Lei que regulamenta o uso do espaço urbano, buscando cidades mais justas e
-                sustentáveis.</p>
-              <ul class="timeline-text">
-                <li>Planejamento urbano formalizado</li>
-                <li>Foco em sustentabilidade</li>
-                <li>Direito à moradia e uso do solo</li>
-              </ul>
-            </div>
-          </div>
+        <div class="timeline-item">
+          <!--ESSA AQUI-->
+          <button type="button" class="btn timeline-badge" data-bs-toggle="modal" data-bs-target="#mod_1950">
+            1950
+          </button>
+          <!--ESSA AQUI-->
+          <h5 class="timeline-title">Industrialização</h5>
+          <p class="timeline-text">A industrialização levou a um rápido crescimento urbano, mudando a estrutura social e
+            econômica.</p>
+          <ul class="timeline-text">
+            <li>Surgimento de polos industriais</li>
+            <li>Migração rural-urbana intensa</li>
+            <li>Expansão de cidades médias</li>
+          </ul>
+        </div>
 
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <div class="timeline-badge">2022</div>
-              <h5 class="timeline-title">Censo Urbano</h5>
-              <p class="timeline-text">87% dos brasileiros viviam em áreas urbanas; ritmo de crescimento populacional
-                mais baixo.</p>
-              <ul class="timeline-text">
-                <li>Cidades modernas e conectadas</li>
-                <li>Planejamento urbano avançado</li>
-                <li>Desafios: mobilidade e sustentabilidade</li>
-              </ul>
-            </div>
+        <div class="timeline-item">
+          <button type="button" class="btn timeline-badge" data-bs-toggle="modal" data-bs-target="#mod_1970">
+            1970
+          </button>
+          <h5 class="timeline-title">Êxodo Rural</h5>
+          <p class="timeline-text">Crescimento desordenado gerou favelas e inchaço populacional.</p>
+          <ul class="timeline-text">
+            <li>Favelas se expandem nas grandes cidades</li>
+            <li>Pressão sobre serviços públicos</li>
+            <li>Urbanização rápida e desordenada</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <button type="button" class="btn timeline-badge" data-bs-toggle="modal" data-bs-target="#mod_2001">
+            2001
+          </button>
+          <h5 class="timeline-title">Estatuto da Cidade</h5>
+          <p class="timeline-text">Lei que regulamenta o uso do espaço urbano, buscando cidades mais justas e
+            sustentáveis.</p>
+          <ul class="timeline-text">
+            <li>Planejamento urbano formalizado</li>
+            <li>Foco em sustentabilidade</li>
+            <li>Direito à moradia e uso do solo</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <button type="button" class="btn timeline-badge" data-bs-toggle="modal" data-bs-target="#mod_2022">
+            2022
+          </button>
+          <h5 class="timeline-title">Censo Urbano</h5>
+          <p class="timeline-text">87% dos brasileiros viviam em áreas urbanas; ritmo de crescimento populacional mais
+            baixo.</p>
+          <ul class="timeline-text">
+            <li>Cidades modernas e conectadas</li>
+            <li>Planejamento urbano avançado</li>
+            <li>Desafios: mobilidade e sustentabilidade</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modais -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="mod_1900" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">1900</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h3>Cidades Pequenas</h3>
+            <p>No início do século XX, as cidades brasileiras eram formadas em torno de atividades agrícolas e rotas de
+              comércio regional. A infraestrutura era precária, com ruas de terra, iluminação deficiente e serviços
+              públicos limitados. A vida urbana era simples e com forte ligação ao campo, refletindo a economia agrária
+              do
+              país.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+    <!-- FINAL Modal -->
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="mod_1950" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">1950</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h3>Industrialização</h3>
+            <p>Com o avanço da industrialização, cidades como São Paulo e Rio de Janeiro se transformaram em polos
+              industriais. Houve crescimento do setor automobilístico, químico e têxtil. O aumento da migração
+              rural-urbana
+              levou ao surgimento de bairros operários e intensificou a urbanização. O Estado passou a investir em
+              infraestrutura urbana e transportes para sustentar a expansão.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FINAL Modal -->
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="mod_1970" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">1970</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h3>Êxodo Rural</h3>
+            <p>Na década de 1970, o Brasil viveu um dos períodos mais intensos de êxodo rural. A mecanização do campo
+              expulsou milhares de trabalhadores, que migraram em massa para os centros urbanos. Esse crescimento
+              acelerado gerou favelas e ocupações irregulares, além de problemas de mobilidade e saneamento. Foi também
+              nessa época que os contrastes sociais ficaram mais visíveis, com aumento da desigualdade urbana.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FINAL Modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="mod_2001" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">2001</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+        <h3>Estatuto da Cidade</h3>
+        <p>O Estatuto da Cidade representou um marco no planejamento urbano brasileiro. Ele estabeleceu o direito à
+          função social da propriedade e ao uso do solo para benefício coletivo. Municípios foram incentivados a criar
+          planos diretores, buscando sustentabilidade, inclusão social e justiça urbana. A lei também trouxe mecanismos
+          de participação popular no desenvolvimento das cidades.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FINAL Modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="mod_2022" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">2022</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+        <h3>Censo Urbano</h3>
+        <p>O Censo de 2022 confirmou a predominância da população urbana no Brasil, alcançando 87%. Apesar do avanço em
+          infraestrutura e tecnologia, persistem desafios como a mobilidade urbana, a desigualdade social, a
+          sustentabilidade ambiental e o déficit habitacional. O dado reflete o amadurecimento da urbanização, mas
+          também aponta para a necessidade de novos modelos de gestão das cidades.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FINAL Modal -->
+
+    
+
+
+    <div id="modal2022" class="modal">
+      <div class="modal-content">
+        <a href="#linha" class="close">&times;</a>
+      </div>
+    </div>
+    <div id="modalEraVargas" class="modal">
+      <div class="modal-content">
+        <a href="#linha" class="close">&times;</a>
+        <h3>Era Vargas (1930–1945)</h3>
+        <p>Na Era Vargas, o Brasil passou por um processo intenso de industrialização, marcado pela transformação de uma
+          economia agrícola em uma economia mais urbana e industrial. O governo Vargas incentivou a substituição de
+          importações...</p>
+        <ul>
+          <li><strong>Substituição de importações</strong> – Produção interna de bens como tecidos, alimentos e aço.
+          </li>
+          <li><strong>Intervenção do Estado</strong> – Criação de empresas estatais, como a Companhia Siderúrgica
+            Nacional (CSN).</li>
+          <li><strong>Industrialização</strong> – Impulsionamento do crescimento da indústria nacional.</li>
+          <li><strong>Legislação Trabalhista</strong> – Criação da CLT (Consolidação das Leis do Trabalho) de 1943.</li>
+          <li><strong>Urbanização</strong> – Aumento das cidades e novos empregos com o crescimento da indústria.</li>
+        </ul>
+      </div>
+    </div>
+    <section id="EraVargas" class="mb-5">
+      <h2>Era Vargas</h2>
+      <div class="card-section">
+        <p>Na Era Vargas (1930–1945), o Brasil passou por um processo intenso de industrialização, marcado pela
+          transformação de uma economia agrícola em uma economia mais urbana e industrial. O governo Vargas
+          incentivou
+          a substituição de importações, ou seja, a produção interna de bens que antes eram comprados do exterior,
+          como tecidos, alimentos industrializados e aço. Houve também forte intervenção do Estado, com a criação
+          de
+          empresas estatais estratégicas, como a Companhia Siderúrgica Nacional (CSN), e políticas de proteção à
+          indústria nacional. Além disso, a industrialização gerou urbanização e novos empregos, acompanhada de
+          legislação trabalhista, como a CLT de 1943, que regulava as relações entre trabalhadores e empresas. O
+          objetivo era tornar o Brasil economicamente mais independente e moderno.</p>
+      </div>
+    </section>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
 
        <!-- Desenvolver melhor -->
       <div class="parallax-wrapper right">
@@ -154,23 +348,6 @@
                 décadas, provocando crescimento rápido e desordenado das cidades, surgimento de favelas, pressão sobre
                 serviços públicos e mudanças culturais. Ao mesmo tempo, regiões rurais sofreram com escassez de
                 trabalhadores e desigualdades regionais.</p>
-            </div>
-          </section>
-           <!-- Desenvolver melhor -->
-
-          <section id="Era Vargas" class="mb-5">
-            <h2>Era Vargas</h2>
-            <div class="card-section">
-              <p>Na Era Vargas (1930–1945), o Brasil passou por um processo intenso de industrialização, marcado pela
-                transformação de uma economia agrícola em uma economia mais urbana e industrial. O governo Vargas
-                incentivou
-                a substituição de importações, ou seja, a produção interna de bens que antes eram comprados do exterior,
-                como tecidos, alimentos industrializados e aço. Houve também forte intervenção do Estado, com a criação
-                de
-                empresas estatais estratégicas, como a Companhia Siderúrgica Nacional (CSN), e políticas de proteção à
-                indústria nacional. Além disso, a industrialização gerou urbanização e novos empregos, acompanhada de
-                legislação trabalhista, como a CLT de 1943, que regulava as relações entre trabalhadores e empresas. O
-                objetivo era tornar o Brasil economicamente mais independente e moderno.</p>
             </div>
           </section>
           <!-- Desenvolver melhor -->

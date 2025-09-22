@@ -363,3 +363,24 @@ section {
     height: 450px;
   }
 }
+.modal-footer{
+  background-color: #1b1b1b;
+}
+
+.modal-body{
+  background-color: #1b1b1b;
+}
+
+.modal-header{
+  background-color: #1b1b1b;
+}
+.modal-title{
+  color: #ff4f4f;
+}
+
+.modal-body h3{
+  color: #ff4f4f;
+}
+title{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
