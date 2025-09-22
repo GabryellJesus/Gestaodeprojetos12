@@ -1,329 +1,323 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Home.css" <title>UQSEH - Urbanismo, Questões Socioeconômicas e História</title>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min
-.css" rel="stylesheet">
-    <!-- FontAwesome -->
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Leaflet -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <!-- AOS (Animate on Scroll) -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Urbanização no Brasil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Home.css">
 </head>
 
 <body>
-    <!-- VLibras -->
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
-    </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Urbanização Brasil</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span
-                    class="navbar-toggler-icon"><i class="fas
-fa-bars" style="color:white;"></i></span></button>
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#vantagens">Vantagens</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#desvantagens">Desvantagens</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#impactos">Impactos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#graficos">Gráficos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#mapa">Mapa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#podcasts">Podcasts</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#referencias">Referências</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Hero -->
-    <section class="hero" data-aos="fade-in">
-        <div>
-            <h1>Urbanização no Brasil</h1>
-            <p class="lead">Impactos sociais, econômicos e ambientais</p>
-        </div>
-    </section>
+  <nav class="navbar navbar-expand-lg"> 
     <div class="container">
-        <div class="banner" data-aos="fade-up">[ Espaço reservado para Banner
-            ]</div>
-    </div>
-    <!-- Sobre -->
-    <section class="container py-5" data-aos="fade-up">
-        <h2 class="text-center mb-4">O que é a Urbanização?</h2>
-        <p class="text-center">Urbanização é o crescimento das cidades e aumento
-            da população urbana. No Brasil, acelerou no século XX devido à migração,
-            industrialização e busca por melhores condições de vida, trazendo
-            oportunidades e desafios sociais, ambientais e econômicos.</p>
-    </section>
-    <!-- Parallax Vantagens -->
-
-    <div class="parallax"
-        style="background-image:url('https://images.unsplash.com/photo-1534351590666-13e3e96b5017?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"
-        data- aos="fade-in">Vantagens da Urbanização</div>
-
-    <section id="vantagens" class="container py-5">
-        <div class="row g-4">
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="card"><img
-                        src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Desenvolvimento Econômico</h5>
-                        <p class="card-text">Concentração de indústrias e serviços gera empregos e
-                            renda.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card"><img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Acesso a Serviços</h5>
-                        <p class="card-text">Educação, saúde, lazer e transporte tornam-se mais
-                            acessíveis.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card"><img src="https://images.unsplash.com/photo-1520962918287-7448c2878f65?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Inovação</h5>
-                        <p class="card-text">Cidades concentram centros de pesquisa e startups fomentando
-
-                            inovação.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Parallax Desvantagens -->
-
-    <div class="parallax"
-        style="background-image:url('https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"
-        data- aos="fade-in">Desafios da Urbanização</div>
-
-    <section id="desvantagens" class="container py-5">
-        <div class="row g-4">
-            <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
-                <div class="card"><img
-                        src="https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Desigualdade
-                            Social</h5>
-                        <p>Crescimento desordenado gera favelização e
-                            exclusão.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4" data-aos="fade-right" data-aos-delay="200">
-                <div class="card"><img src="https://images.unsplash.com/photo-1520964552243-
-1b4c2f8b6fbd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Impactos
-                            Ambientais</h5>
-                        <p>Poluição, desmatamento, ilhas de calor e crises
-                            hídricas.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
-                <div class="card"><img src="https://images.unsplash.com/photo-1604514627984-
-89e3d8d11a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Infraestrutura
-                            Precária</h5>
-                        <p>Transporte, saneamento e habitação não acompanham
-                            demanda.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Impactos Detalhados -->
-    <section id="impactos" class="container py-5">
-        <h2 class="text-center mb-4" data-aos="fade-up">Impactos Detalhados</h2>
-        <div class="row g-4">
-            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-                <div class="card text-center p-3"><i class="fas fa-users fa-3x mb-3 text-
-info"></i>
-                    <h5>Sociais</h5>
-                    <p>Crescimento urbano desordenado aumenta
-
-                        desigualdade, favelização e problemas de mobilidade.</p>
-                </div>
-            </div>
-            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-                <div class="card text-center p-3"><i class="fas fa-leaf fa-3x mb-3 text-
-success"></i>
-                    <h5>Ambientais</h5>
-                    <p>Poluição, desmatamento e crises
-
-                        hídricas aumentam com expansão urbana.</p>
-                </div>
-            </div>
-            <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-                <div class="card text-center p-3"><i class="fas fa-chart-line fa-3x mb-3 text-
-warning"></i>
-                    <h5>Econômicos</h5>
-                    <p>Urbanização gera empregos e inovação,
-
-                        mas exige planejamento e investimento em infraestrutura.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Gráficos -->
-    <section id="graficos" class="container py-5">
-        <h2 class="text-center mb-4" data-aos="fade-up">Gráficos de
-            Urbanização</h2>
-        <div class="chart-container" data-aos="fade-up"><canvas id="chartUrban"></canvas></div>
-
-        <div class="chart-container" data-aos="fade-up" data-aos- delay="200"><canvas id="chartDensidade"></canvas>
-        </div>
-
-    </section>
-    <!-- Mapa -->
-    <section id="mapa" class="container py-5">
-        <h2 class="text-center mb-4" data-aos="fade-up">Mapa de Urbanização por
-            Região</h2>
-        <div id="map" data-aos="fade-up"></div>
-    </section>
-    <!-- Galeria -->
-    <section id="galeria" class="container py-5">
-        <h2 class="text-center mb-4" data-aos="fade-up">Galeria de Imagens</h2>
-        <div class="row g-4 gallery">
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100"><img src="https://images.unsplash.com/photo-1494526585095-
-
-c41746248156?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt=""></div>
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200"><img src="https://images.unsplash.com/photo-1520974737032-
-6d2d87c1b1c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt=""></div>
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300"><img src="https://images.unsplash.com/photo-1536480033474-
-9e4ccf0a993e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt=""></div>
-        </div>
-    </section>
-    <!-- Podcasts -->
-    <section id="podcasts" class="container py-5">
-        <h2 class="text-center mb-4" data-aos="fade-up">Podcasts sobre
-            Urbanização</h2>
-        <div id="podcastCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner podcast">
-                <div class="carousel-item active"><iframe src="https://open.spotify.com/embed/episode/1"
-                        frameborder="0"></iframe></div>
-                <div class="carousel-item"><iframe src="https://open.spotify.com/embed/episode/2"></iframe></div>
-                <div class="carousel-item"><iframe src="https://open.spotify.com/embed/episode/3"></iframe></div>
-                <div class="carousel-item"><iframe src="https://open.spotify.com/embed/episode/4"></iframe></div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs- target="#podcastCarousel"
-                data-bs-slide="prev"><span class="carousel-
-control-prev-icon"></span></button>
-
-            <button class="carousel-control-next" type="button" data-bs- target="#podcastCarousel"
-                data-bs-slide="next"><span class="carousel-
-control-next-icon"></span></button>
-
-        </div>
-    </section>
-    <!-- Referências -->
-    <section id="referencias" class="container py-5">
-        <h2 class="text-center mb-4" data-aos="fade-up">Referências</h2>
-        <ul>
-            <li>IBGE - Instituto Brasileiro de Geografia e Estatística</li>
-            <li>ONU-Habitat - Relatórios sobre urbanização</li>
-            <li>Maricato, E. - "O Impasse da Política Urbana no Brasil"</li>
-            <li>Rolnik, R. - "Cidade e Cidadania"</li>
-            <li>IPEA - Estudos sobre Desenvolvimento Urbano</li>
+      <a class="navbar-brand fw-bold" href="#">UrbanizaBR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#dados">Linha do Tempo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#causas">Causas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Era Vargas">Era Vargas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#consequencias">Consequências</a></li>
+          <li class="nav-item"><a class="nav-link" href="#solucoes">Soluções</a></li>
+          <li class="nav-item"><a class="nav-link" href="#graficos">Gráficos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mapa">Mapa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#videos">Vídeos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#podcasts">Podcasts</a></li>
+          <li class="nav-item"><a class="nav-link" href="#quiz">Questões</a></li>
+          <li class="nav-item"><a class="nav-link" href="#fontes">Fontes</a></li>
         </ul>
-    </section>
+      </div>
+    </div>
+  </nav>
 
-    <footer>
-        <p>&copy; 2025 Urbanização Brasil | Desenvolvido para fins acadêmicos</p>
-        <div class="mt-2">
-            <a href="#"><i class="fab fa-facebook-f mx-2"></i></a>
-            <a href="#"><i class="fab fa-twitter mx-2"></i></a>
-            <a href="#"><i class="fab fa-instagram mx-2"></i></a>
+  <header>
+    <div class="container">
+      <h1 class="display-5 fw-bold">Urbanização no Brasil</h1>
+      <p class="lead">Conteúdo histórico, geográfico e material para vestibular.</p>
+    </div>
+  </header>
+
+<script type="text/javascript" src="https://cdn.handtalk.me/ht-widget/ht-widget.js"></script>
+<div class="handtalk-button"></div>
+<script>
+  var ht = new HT.Widget();
+  ht.init();
+</script>
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper></div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+  <main class="container my-5">
+
+    <section id="banners" class="mb-5">
+      <div class="card mb-3">
+        <img src="img/bannerinstitucional.png" class="img-fluid rounded" alt="Banner"
+          style="max-height: 400px; width: 100%; object-fit: cover;">
+      </div>
+
+      <!-- Desenvolver melhor Apezar que eu gostei👍 -->
+      <section id="dados" class="mb-5">
+        <h2>Linha do Tempo</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-badge">1900</div>
+              <h5 class="timeline-title">Cidades Pequenas</h5>
+              <p class="timeline-text">No início do século XX, as cidades pequenas do Brasil eram centros de comércio
+                agrícola, com infraestrutura básica e poucas comodidades.</p>
+              <ul class="timeline-text">
+                <li>População urbana &lt; 20%</li>
+                <li>Infraestrutura limitada</li>
+                <li>Centros comerciais rurais</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-badge">1950</div>
+              <h5 class="timeline-title">Industrialização</h5>
+              <p class="timeline-text">A industrialização levou a um rápido crescimento urbano, mudando a estrutura
+                social e econômica.</p>
+              <ul class="timeline-text">
+                <li>Surgimento de polos industriais</li>
+                <li>Migração rural-urbana intensa</li>
+                <li>Expansão de cidades médias</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-badge">1970</div>
+              <h5 class="timeline-title">Êxodo Rural</h5>
+              <p class="timeline-text">Crescimento desordenado gerou favelas e inchaço populacional.</p>
+              <ul class="timeline-text">
+                <li>Favelas se expandem nas grandes cidades</li>
+                <li>Pressão sobre serviços públicos</li>
+                <li>Urbanização rápida e desordenada</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-badge">2001</div>
+              <h5 class="timeline-title">Estatuto da Cidade</h5>
+              <p class="timeline-text">Lei que regulamenta o uso do espaço urbano, buscando cidades mais justas e
+                sustentáveis.</p>
+              <ul class="timeline-text">
+                <li>Planejamento urbano formalizado</li>
+                <li>Foco em sustentabilidade</li>
+                <li>Direito à moradia e uso do solo</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-badge">2022</div>
+              <h5 class="timeline-title">Censo Urbano</h5>
+              <p class="timeline-text">87% dos brasileiros viviam em áreas urbanas; ritmo de crescimento populacional
+                mais baixo.</p>
+              <ul class="timeline-text">
+                <li>Cidades modernas e conectadas</li>
+                <li>Planejamento urbano avançado</li>
+                <li>Desafios: mobilidade e sustentabilidade</li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </footer>
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundl
-e.min.js"></script>
-    <script>
-        AOS.init({ duration: 1000, once: true });
-        // Charts
-        const ctx = document.getElementById('chartUrban').getContext('2d');
-        const chartUrban = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ['1950', '1970', '1990', '2010', '2020'],
-                datasets: [{
-                    label: '% População Urbana', data: [36, 55, 75, 84, 87],
-                    borderColor: '#00ffcc', backgroundColor: 'rgba(0,255,204,0.3)', fill: true,
-                    tension: 0.3
-                }]
-            },
-            options: {
-                responsive: true, plugins: { legend: { labels: { color: 'white' } } },
-                scales: { x: { ticks: { color: 'white' } }, y: { ticks: { color: 'white' } } }
-            }
-        });
-        const ctx2 = document.getElementById('chartDensidade').getContext('2d');
-        const chartDensidade = new Chart(ctx2, {
-            type: 'bar',
-            data: {
-                labels: ['Sudeste', 'Nordeste', 'Sul', 'Norte', 'Centro-Oeste'],
-                datasets: [{
-                    label: 'Densidade Urbana (hab/km2)', data: [500, 250, 150, 50, 100],
-                    backgroundColor: 'rgba(0,255,204,0.5)'
-                }]
-            },
-            options: {
-                responsive: true, plugins: { legend: { labels: { color: 'white' } } },
-                scales: { x: { ticks: { color: 'white' } }, y: { ticks: { color: 'white' } } }
-            }
-        });
-        // Mapa
-        const map = L.map('map').setView([-14.2350, -51.9253], 4);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap contributors'
-        }).addTo(map);
-        const estados = [{
-            name: 'Sudeste', coords: [-22, -
-                45], urban: 85
-        }, {
-            name: 'Nordeste', coords: [-9, -
-                38], urban: 75
-        }, {
-            name: 'Sul', coords: [-30, -52], urban: 80
-        }, { name: 'Norte', coords: [-3, -60], urban: 70 }, {
-            name: 'Centro-Oeste', coords: [-15, -54], urban: 78
-        }];
+      </section>
 
-        estados.forEach(e => {
-            L.circle(e.coords, {
-                radius: e.urban * 2000, color: '#00ffcc', fillColor: '#00ffcc', fillOpacity: 0.4
-            }).addTo(map).bindPopup(`${e.name}:
-${e.urban} % população urbana`);
-        });
-    </script>
+       <!-- Desenvolver melhor -->
+      <div class="parallax-wrapper right">
+        <div class="parallax-content">
+
+          <section id="causas" class="mb-5">
+            <h2>Causas da Urbanização</h2>
+            <div class="card-section">
+              <p>O intenso êxodo rural no Brasil foi impulsionado pela modernização da agricultura, que reduziu a
+                necessidade de trabalhadores no campo, e pela industrialização das cidades, que oferecia empregos e
+                melhores
+                condições de vida. Esse movimento transformou o país de rural para predominantemente urbano em poucas
+                décadas, provocando crescimento rápido e desordenado das cidades, surgimento de favelas, pressão sobre
+                serviços públicos e mudanças culturais. Ao mesmo tempo, regiões rurais sofreram com escassez de
+                trabalhadores e desigualdades regionais.</p>
+            </div>
+          </section>
+           <!-- Desenvolver melhor -->
+
+          <section id="Era Vargas" class="mb-5">
+            <h2>Era Vargas</h2>
+            <div class="card-section">
+              <p>Na Era Vargas (1930–1945), o Brasil passou por um processo intenso de industrialização, marcado pela
+                transformação de uma economia agrícola em uma economia mais urbana e industrial. O governo Vargas
+                incentivou
+                a substituição de importações, ou seja, a produção interna de bens que antes eram comprados do exterior,
+                como tecidos, alimentos industrializados e aço. Houve também forte intervenção do Estado, com a criação
+                de
+                empresas estatais estratégicas, como a Companhia Siderúrgica Nacional (CSN), e políticas de proteção à
+                indústria nacional. Além disso, a industrialização gerou urbanização e novos empregos, acompanhada de
+                legislação trabalhista, como a CLT de 1943, que regulava as relações entre trabalhadores e empresas. O
+                objetivo era tornar o Brasil economicamente mais independente e moderno.</p>
+            </div>
+          </section>
+          <!-- Desenvolver melhor -->
+          <section id="consequencias" class="mb-5">
+            <h2>Consequências</h2>
+            <div class="card-section">
+              <p>A urbanização no Brasil trouxe consequências tanto econômicas quanto sociais. Do ponto de vista
+                econômico,
+                a concentração da população nas cidades impulsionou o crescimento industrial, o comércio e os serviços,
+                aumentando o Produto Interno Bruto (PIB) das áreas urbanas e atraindo investimentos em infraestrutura,
+                como
+                transporte, habitação e energia. No entanto, esse crescimento nem sempre foi equilibrado, resultando em
+                desigualdade econômica, com concentração de renda nas regiões centrais e diferenças significativas entre
+                cidades e regiões. Socialmente, a urbanização provocou o êxodo rural, o crescimento desordenado das
+                cidades
+                e a formação de favelas e periferias com condições precárias de moradia. Houve aumento da desigualdade
+                no
+                acesso a serviços públicos, como saúde, educação e saneamento, além de problemas ambientais urbanos,
+                como
+                poluição, enchentes e degradação de áreas naturais. Ao mesmo tempo, as cidades passaram a concentrar
+                diversidade cultural, novas formas de lazer e estilos de vida urbanos, transformando profundamente a
+                sociedade brasileira.</p>
+            </div>
+          </section>
+           <!-- Desenvolver melhor -->
+          <section id="solucoes" class="mb-5">
+            <h2>Soluções</h2>
+            <div class="card-section">
+              <p>Para minimizar os impactos negativos da urbanização no Brasil, é necessário investir em planejamento
+                urbano
+                sustentável, garantindo que as cidades cresçam de forma organizada e equilibrada. A implementação de
+                políticas habitacionais eficazes pode reduzir a favelização e melhorar a qualidade de vida nas
+                periferias,
+                oferecendo moradia digna e acesso a serviços básicos. É fundamental também investir em infraestrutura de
+                transporte e mobilidade urbana, tornando o deslocamento mais eficiente e reduzindo o trânsito e a
+                poluição.
+                A expansão de serviços públicos, como saúde, educação e saneamento, deve acompanhar o crescimento urbano
+                para diminuir desigualdades sociais. Além disso, políticas de desenvolvimento regional podem incentivar
+                o
+                crescimento econômico em cidades menores, reduzindo a pressão sobre os grandes centros urbanos. Por fim,
+                a
+                promoção da consciência ambiental e uso sustentável dos recursos ajuda a prevenir a degradação e a
+                poluição,
+                tornando as cidades mais habitáveis.</p>
+            </div>
+          </section>
+
+        </div>
+
+        <aside class="parallax-lateral" aria-hidden="true"></aside>
+      </div>
+      <!-- Falta "Sumario" -->
+      <section id="graficos" class="mb-5">
+        <h2>Gráficos</h2>
+        <div class="row g-3">
+          <div class="col-md-8">
+            <img src="img/g1.png" class="img-fluid rounded" style="max-height: 400px; width: 100%; object-fit: contain;"
+              alt="Gráfico">
+          </div>
+          <div class="col-md-4">
+            <img src="img/g2.png" class="img-fluid rounded" style="max-height: 400px; width: 100%; object-fit: contain;"
+              alt="Gráfico">
+          </div>
+        </div>
+      </section>
+      <!-- Falta "Sumario" -->
+      <section id="mapa" class="mb-5">
+        <h2>Mapa do Brasil</h2>
+        <div class="card p-3">
+          <center>
+            <img src="https://atlasescolar.ibge.gov.br/images/mapas/brasil/1920/pag143.jpg" width="400" height="auto"
+              alt="Mapa Brasil">
+          </center>
+        </div>
+      </section>
+
+
+      <!-- Da uma olhada nos links pq não tacarregando -->
+      <section id="videos" class="mb-5">
+        <h2 class="mb-4">Vídeos</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card p-3 h-100">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/taNEVhKuCUY" allowfullscreen></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Urbanização brasileira: entenda o processo e seus impactos</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-3 h-100">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/Gt3hkSupWKM" allowfullscreen></iframe>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Urbanização brasileira​ - Geografia - Ensino Médio</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     <!-- A fazer -->
+      <section id="podcasts" class="mb-5">
+        <h2>Podcasts</h2>
+        <div class="card p-3">
+          <div class="card p-3">
+            <div class="placeholder d-flex justify-content-center align-items-center" style="height: 150px;">Espaço para
+              podcasts</div>
+          </div>
+
+        </div>
+      </section>
+      <!-- A fazer -->
+      <section id="quiz" class="mb-5">
+        <h2>Questões vestibular</h2>
+        <div class="card p-3">
+          <div class="card p-3">
+            <div class="placeholder d-flex justify-content-center align-items-center" style="height: 150px;">Espaço para
+              quiz</div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="fontes" class="mb-5">
+        <h2>Fontes</h2>
+        <ul>
+          <li><a href="https://censo2022.ibge.gov.br/panorama/" target="_blank">IBGE — Censo 2022</a></li>
+          <li><a href="https://brasilescola.uol.com.br/brasil/urbanizacao-no-brasil.htm" target="_blank">Brasil
+              Escola</a></li>
+          <li><a href="https://www.todamateria.com.br/urbanizacao-brasileira/" target="_blank">Toda Matéria</a></li>
+          <li><a href="https://atlasescolar.ibge.gov.br/brasil/3073-urbanizacao.html" target="_blank">Atlas Escolar
+              IBGE</a></li>
+          <li><a href="https://mundoeducacao.uol.com.br/geografia/urbanizacao-brasileira.htm" target="_blank">Mundo
+              Educação</a></li>
+        </ul>
+      </section>
+
+  </main>
+
+  <footer class="text-center py-3">
+    <div class="container small">© 2025 UrbanizaBR — Atividade do SENAI</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
