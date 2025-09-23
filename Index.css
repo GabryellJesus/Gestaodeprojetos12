@@ -20,7 +20,7 @@ ul li {
 
 
 header {
-  background: url('img/bannerpromocionalsemCTA.png') center/cover no-repeat;
+  background: url('img/bannerprincipal.png') center/cover no-repeat;
   height: 300px;
   display: flex;
   align-items: center;
@@ -381,6 +381,9 @@ section {
 .modal-body h3{
   color: #ff4f4f;
 }
-title{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.modal-body h2{
+  color: #ff4f4f;
+}
+header{
+  font-family: serif;
 }
