@@ -387,3 +387,16 @@ section {
 header{
   font-family: serif;
 }
+
+footer {
+  background-color: #111;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  color: #828282;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000;
+}
